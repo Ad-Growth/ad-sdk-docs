@@ -175,7 +175,7 @@ public class MyActivity extends AppCompatActivity implements AdView.Listener {
     myContainer.addView(adView);
   }
 
-  override fun onLoad() {}
+  override fun onLoad(ad: AdView) {}
 
   override fun onFailedToLoad(e: AdRequestException?) {}
 

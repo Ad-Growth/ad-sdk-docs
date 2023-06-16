@@ -1,6 +1,6 @@
 ---
 title: RewardedAd
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 Class for displaying rewarded ad.
@@ -13,7 +13,7 @@ Class for displaying rewarded ad.
 
 | Param  | Type   | Description                    |
 | ------ | ------ | ------------------------------ |
-| unitId | unitId | Registered rewarded ad unit_id |
+| unitId | String | Registered rewarded ad unit_id |
 
 ## Methods
 

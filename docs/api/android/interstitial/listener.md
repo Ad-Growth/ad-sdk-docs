@@ -4,9 +4,15 @@ A interstitial events interface.
 
 ## Methods
 
-### `onLoad()`
+### `onLoad(InterstitialAd ad)`
 
 Called when the ad is ready to show.
+
+**Param:**
+
+| Param | Type                                             | Description                   |
+| ----- | ------------------------------------------------ | ----------------------------- |
+| ad    | [InterstitialAd](/docs/api/android/interstitial) | Request Load exception object |
 
 ### `onDismissed()`
 

@@ -1,6 +1,6 @@
 ---
 title: InterstitialAd
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 Class for displaying interstitial ad.
@@ -13,7 +13,7 @@ Class for displaying interstitial ad.
 
 | Param  | Type   | Description                        |
 | ------ | ------ | ---------------------------------- |
-| unitId | unitId | Registered interstitial ad unit_id |
+| unitId | String | Registered interstitial ad unit_id |
 
 ## Methods
 
