@@ -11,8 +11,8 @@ Get started by **using the Ads SDK**.
 
 Before starting the implementation you need to have a registered account on our website and register your application and display blocks
 
-- Create a publisher account on [AdGrowth](https://app-ad.adgrowth.com);
-- Go to [apps](https://app-ad.adgrowth.com/mfe-apps/apps) and register your app;
+- Create a publisher account on [AdGrowth](https://adserver.adgrowth.com);
+- Go to [apps](https://adserver.adgrowth.com/mfe-apps/apps) and register your app;
 - Copy your app `client_key`
 - Register your app display blocks and give them an alias name
 

@@ -11,9 +11,9 @@ Class for displaying rewarded ad.
 
 **Params:**
 
-| Param  | Type   | Description                    |
-| ------ | ------ | ------------------------------ |
-| unitId | String | Registered rewarded ad unit_id |
+| Param  | Type   | Description                                                                       |
+| ------ | ------ | --------------------------------------------------------------------------------- |
+| unitId | String | Registered rewarded ad unit_id on [AdServer panel](https://adserver.adgrowth.com) |
 
 ## Methods
 

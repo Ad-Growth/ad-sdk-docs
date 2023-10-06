@@ -8,7 +8,7 @@ import TabItem from "@theme/TabItem";
 
 ### How to implement on iOS platform
 
-You need to have `unit_id` for `INTERSTITIAL` type, register on your app screen at [Apps panel](https://app-ad.adgrowth.com/mfe-apps/apps)
+You need to have `unit_id` for `INTERSTITIAL` type, register on your app screen at [AdServer panel](https://adserver.adgrowth.com/mfe-apps/apps)
 
 <Tabs>
   <TabItem value="swift" label="Swift" default>

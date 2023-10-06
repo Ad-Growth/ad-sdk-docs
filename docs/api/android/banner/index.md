@@ -3,7 +3,7 @@ title: AdView
 sidebar_position: 5
 ---
 
-Class for displaying rewarded ad.
+Class for displaying on screen banner ad.
 
 ## Construtor
 
@@ -11,12 +11,12 @@ Class for displaying rewarded ad.
 
 **Params:**
 
-| Param       | Type                                                    | Description                    |
-| ----------- | ------------------------------------------------------- | ------------------------------ |
-| context     | Context                                                 | Parent view                    |
-| unitId      | String                                                  | Registered rewarded ad unit_id |
-| size        | [AdSizeType](/docs/api/android/enums/ad_size_type)      | Banners' dimensions size       |
-| orientation | [AdOrientation](/docs/api/android/enums/ad_orientation) | Banners' orientation           |
+| Param       | Type                                                    | Description                                                                     |
+| ----------- | ------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| context     | Context                                                 | Parent view                                                                     |
+| unitId      | String                                                  | Registered banner ad unit_id on [AdServer panel](https://adserver.adgrowth.com) |
+| size        | [AdSizeType](/docs/api/android/enums/ad_size_type)      | Banners' dimensions size                                                        |
+| orientation | [AdOrientation](/docs/api/android/enums/ad_orientation) | Banners' orientation                                                            |
 
 ## Methods
 
@@ -37,6 +37,12 @@ Set a listener for AdView events
 Get banners' current size.
 
 **Return:** String.
+
+### `reload()`
+
+Force refresh banner
+
+**Return:** void.
 
 ### `getUnitId()`
 

@@ -25,7 +25,7 @@ Add adserver dependency on your `app/build.gradle`
 
 ```gradle
 dependencies {
-   implementation 'com.github.Ad-Growth:ad-sdk-android:1.0.0'
+   implementation 'com.github.Ad-Growth:ad-sdk-android:1.0.1'
 }
 ```
 
@@ -44,7 +44,7 @@ dependencies {
 <dependency>
   <groupId>com.github.Ad-Growth</groupId>
   <artifactId>ad-sdk-android</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 </dependency>
 ```
 

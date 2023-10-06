@@ -8,7 +8,7 @@ import TabItem from "@theme/TabItem";
 
 ### How to implement on Android platform
 
-You need to have `unit_id` for `REWARDED` type, register on your app screen at [Apps panel](https://app-ad.adgrowth.com/mfe-apps/apps).
+You need to have `unit_id` for `REWARDED` type, register on your app screen at [AdServer panel](https://adserver.adgrowth.com/mfe-apps/apps).
 
 ### IMPORTANT
 

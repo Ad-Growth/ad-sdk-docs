@@ -10,7 +10,7 @@ import TabItem from "@theme/TabItem";
 
 Before using any resource, it is necessary to initialize the SDK properly.
 
-For this you need to have the `client_key` at hand, you can get your `client_key` by registering the app in the admin panel.
+For this you need to have the `client_key` at hand, you can get your `client_key` by registering the app in the [AdServer panel](https://adserver.adgrowth.com).
 
 <Tabs>
   <TabItem value="java" label="Java" default>
@@ -95,7 +95,7 @@ You can add user's address or location on anytime to provide a better localized 
   // or you can provide a country, state and/or city
   address.setCountry("US");
   address.setState("NW");
-  address.setState("New york");
+  address.setCity("New york");
 ```
 
   </TabItem>
@@ -183,7 +183,7 @@ You can add user's address or location on anytime to provide a better localized 
   // or you can provide a country, state and/or city
   address.country = "US"
   address.state = "NW"
-  address.state = "New york"
+  address.city = "New york"
 ```
 
   </TabItem>
