@@ -34,7 +34,7 @@ const config = {
 
   presets: [
     [
-      "classic",
+      "@docusaurus/preset-classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
@@ -42,6 +42,17 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/ad-growth/ad-sdk-docs/tree/main/",
+          lastVersion: "1.0.x",
+          versions: {
+            "1.0.x": {
+              label: "1.0.x (Latest)",
+              path: "",
+            },
+            current: {
+              label: "Next",
+              path: "next",
+            },
+          },
         },
         // blog: {
         //   showReadingTime: true,
@@ -65,6 +76,9 @@ const config = {
         defaultMode: "dark",
         respectPrefersColorScheme: true,
       },
+      customFields: {
+        currentVersion: "1.1.0", // Defina a versão atual
+      },
       image: "img/social-card.jpg",
       navbar: {
         title: "AdGrowth - Adserver SDK",
@@ -75,12 +89,18 @@ const config = {
         items: [
           {
             type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            sidebarId: "getting_started",
             position: "left",
-            label: "Getting Started",
+            label: "Docs",
           },
           { to: "/docs/usage", label: "Usage", position: "left" },
           { to: "/docs/category/api", label: "API", position: "left" },
+          {
+            type: "docsVersionDropdown",
+            position: "right",
+            // dropdownItemsAfter: [{ to: "/versions", label: "All versions" }],
+            dropdownActiveClassDisabled: true,
+          },
           {
             href: "https://github.com/ad-growth",
             label: "GitHub",
@@ -134,6 +154,7 @@ const config = {
 
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        contextualSearch: true,
       },
     }),
 };
