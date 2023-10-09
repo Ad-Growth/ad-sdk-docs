@@ -16,6 +16,16 @@ Called when the ad is ready to show.
 | ----- | ---------------------------------------- | ----------------------------- |
 | ad    | [RewardedAd](/docs/api/android/rewarded) | Request load exception object |
 
+### `onEarnedReward(reward)`
+
+Called when the ad has played to the end and the reward has been released to the user
+
+**Param:**
+
+| Param  | Type                                                 | Description        |
+| ------ | ---------------------------------------------------- | ------------------ |
+| reward | [RewardItem](/docs/api/android/rewarded/reward_item) | Reward item object |
+
 ### `onDismissed()`
 
 Called when the ad is ready was closed.

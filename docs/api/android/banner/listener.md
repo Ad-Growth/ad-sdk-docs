@@ -12,9 +12,9 @@ A rewarded events interface.
 Called when the ad is ready to show.
 **Param:**
 
-| Param | Type                                     | Description                   |
-| ----- | ---------------------------------------- | ----------------------------- |
-| ad    | [RewardedAd](/docs/api/android/rewarded) | Request load exception object |
+| Param | Type                               | Description                   |
+| ----- | ---------------------------------- | ----------------------------- |
+| ad    | [AdView](/docs/api/android/banner) | Request load exception object |
 
 ### `onDismissed()`
 

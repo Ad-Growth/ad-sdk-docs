@@ -26,9 +26,9 @@ Set a listener for AdView events
 
 **Param:**
 
-| Param    | Type                                                   | Description                       |
-| -------- | ------------------------------------------------------ | --------------------------------- |
-| listener | [AdView.Listener](/docs/api/android/rewarded/listener) | Rewarded event listener interface |
+| Param    | Type                                                 | Description                     |
+| -------- | ---------------------------------------------------- | ------------------------------- |
+| listener | [AdView.Listener](/docs/api/android/banner/listener) | AdView event listener interface |
 
 **Return:** void.
 
