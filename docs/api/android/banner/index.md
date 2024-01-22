@@ -15,7 +15,7 @@ Class for displaying on screen banner ad.
 | ----------- | ------------------------------------------------------- | ------------------------------------------------------------------------------- |
 | context     | Context                                                 | Parent view                                                                     |
 | unitId      | String                                                  | Registered banner ad unit_id on [AdServer panel](https://adserver.adgrowth.com) |
-| size        | [AdSizeType](/docs/api/android/enums/ad_size_type)      | Banners' dimensions size                                                        |
+| size        | [AdSize](/docs/api/android/enums/ad_size)      | Banners' dimensions size                                                        |
 | orientation | [AdOrientation](/docs/api/android/enums/ad_orientation) | Banners' orientation                                                            |
 
 ## Methods
@@ -48,7 +48,7 @@ Force refresh banner
 
 Get banners' current unitId.
 
-**Return:** [AdSizeType](/docs/api/android/enums/ad_size_type).
+**Return:** [AdSize](/docs/api/android/enums/ad_size).
 
 ### `getOrientation()`
 

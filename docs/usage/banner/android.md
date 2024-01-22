@@ -39,7 +39,7 @@ You can add an AdView to your view programmatically with
 ```java
 import com.adgrowth.adserver.views.AdView;
 import com.adgrowth.adserver.enums.AdOrientation;
-import com.adgrowth.adserver.enums.AdSizeType;
+import com.adgrowth.adserver.enums.AdSize;
 import com.adgrowth.adserver.exceptions.AdRequestException;
 ```
 
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
        // this must be registered on adserver panel
     String unit_id =  "my_banner_unit_id";
 
-    AdView adView = new AdView(this, unit_id, AdSizeType.FULL_BANNER, AdOrientation.LANDSCAPE);
+    AdView adView = new AdView(this, unit_id, AdSize.FULL_BANNER, AdOrientation.LANDSCAPE);
 
     // set your adView width and height
     adView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 128));
@@ -127,7 +127,7 @@ or instantiate directly
 ```kotlin
 import com.adgrowth.adserver.views.AdView
 import com.adgrowth.adserver.enums.AdOrientation
-import com.adgrowth.adserver.enums.AdSizeType
+import com.adgrowth.adserver.enums.AdSize
 import com.adgrowth.adserver.exceptions.AdRequestException
 ```
 
@@ -144,7 +144,7 @@ class MainActivity : AppCompatActivity() {
     // this must be registered on adserver panel
     val unit_id = "my_banner_unit_id"
 
-    val adView = AdView(this, unit_id, AdSizeType.FULL_BANNER, AdOrientation.LANDSCAPE)
+    val adView = AdView(this, unit_id, AdSize.FULL_BANNER, AdOrientation.LANDSCAPE)
 
     // set your adView width and height
     adView.layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,128)
