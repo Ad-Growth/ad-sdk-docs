@@ -13,7 +13,6 @@ Before starting the implementation you need to have a registered account on our 
 
 - Create a publisher account on [AdGrowth](https://adserver.adgrowth.com);
 - Go to [apps](https://adserver.adgrowth.com/mfe-apps/apps) and register your app;
-- Copy your app `client_key`
 - Register your app display blocks and give them an alias name
 
 ### 1. Install the SDK on your app

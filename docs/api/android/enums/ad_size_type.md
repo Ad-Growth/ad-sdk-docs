@@ -1,5 +1,5 @@
 ---
-title: AdSizeType
+title: AdSize
 sidebar_position: 1
 ---
 

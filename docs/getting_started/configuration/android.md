@@ -10,7 +10,30 @@ import TabItem from "@theme/TabItem";
 
 Before using any resource, it is necessary to initialize the SDK properly.
 
-For this you need to have the `client_key` at hand, you can get your `client_key` by registering the app in the [AdServer panel](https://adserver.adgrowth.com).
+For this you need to have the app keys at hand, you can get your keys by registering the app in the [AdServer panel](https://adserver.adgrowth.com/mfe-apps/apps).
+
+In the AdServer panel you will have 2 types of keys, Development and Production. We strongly recommend that you **only use production keys when compiling your app for distribution**.
+​
+
+### You must add these two meta tags with keys inside your app tag in AndroidManifest.xml
+
+
+```xml
+<application>
+
+  <!-- ⬇ Add me ⬇ -->
+
+  <meta-data
+    android:name="com.adgrowth.adserver.CLIENT_KEY"
+    android:value="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"/>
+  <meta-data
+    android:name="com.google.android.gms.ads.APPLICATION_ID"
+    android:value="ca-app-pub-XXXXXXXXXXXXXXXX~XXXXXXXXXX"/>
+
+  <!-- ⬆ Add me ⬆ -->
+
+</application>
+```
 
 <Tabs>
   <TabItem value="java" label="Java" default>
@@ -30,10 +53,8 @@ public class MainActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-    // get the client_key registering the app on Adserver Panel
-    String client_key = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
 
-    AdServer.initialize(this, client_key, new AdServer.Listener() {
+    AdServer.initialize(this, new AdServer.Listener() {
         @Override
         public void onInit() {
           // you are ready to use ads
@@ -73,7 +94,7 @@ You can pass an user profile on AdServer `initialize` method
   profile.removeInterest("movies");
 
   // pass the profile on initialize method
-  AdServer.initialize(this, client_key, profile, new AdServer.Listener() {
+  AdServer.initialize(this, profile, new AdServer.Listener() {
       // ...
   });
 
@@ -116,10 +137,7 @@ class MainActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
 
-    // get the client_key registering the app on Adserver Panel
-    val clientKey = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
-
-    AdServer.initialize(this, clientKey, object : AdServer.Listener {
+    AdServer.initialize(this, object : AdServer.Listener {
       override fun onInit() {
         // you are ready to use ads
       }
@@ -161,7 +179,7 @@ You can pass an user profile on AdServer `initialize` method
   profile.removeInterest("movies")
 
   // pass the profile on initialize method
-  AdServer.initialize(this, clientKey, profile, object : AdServer.Listener {
+  AdServer.initialize(this, profile, object : AdServer.Listener {
       // ...
   });
 
