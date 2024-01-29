@@ -191,4 +191,4 @@ You can add user's address or location on anytime to provide a better localized 
 
 ### Usage
 
-Once configured you can check the [usage](/docs/usage) for ad implementation
+Once configured you can check the [usage](../../usage) for ad implementation

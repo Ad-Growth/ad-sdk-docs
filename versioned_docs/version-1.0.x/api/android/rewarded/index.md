@@ -23,9 +23,9 @@ Set a listener for RewardedAd events
 
 **Param:**
 
-| Param    | Type                                                       | Description                       |
-| -------- | ---------------------------------------------------------- | --------------------------------- |
-| listener | [RewardedAd.Listener](/docs/api/android/rewarded/listener) | Rewarded event listener interface |
+| Param    | Type                                        | Description                       |
+| -------- | ------------------------------------------- | --------------------------------- |
+| listener | [RewardedAd.Listener](../rewarded/listener) | Rewarded event listener interface |
 
 **Return:** void.
 

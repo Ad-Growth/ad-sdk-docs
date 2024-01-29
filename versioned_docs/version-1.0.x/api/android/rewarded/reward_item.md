@@ -3,7 +3,7 @@ title: RewardItem
 sidebar_position: 2
 ---
 
-[RewardedAd](/docs/api/android/rewarded) user reward class
+[RewardedAd](../rewarded) user reward class
 
 ## Methods
 

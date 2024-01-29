@@ -12,7 +12,7 @@ You need to have `unit_id` for `REWARDED` type, register on your app screen at [
 
 ### IMPORTANT
 
-This type of ad works similarly to the [InterstitialAd](/docs/category/interstitial/), however there are additional settings when registering the display block.
+This type of ad works similarly to the [InterstitialAd](../../category/interstitial/), however there are additional settings when registering the display block.
 You can set a reward `item` name and `value`.
 
 <Tabs>
@@ -28,7 +28,7 @@ import com.adgrowth.adserver.exceptions.AdRequestException;
 
 #### instantiate RewardedAd
 
-After the SDK is [initialized](/docs/category/configuration) you can instantiate, load and show rewarded ads.
+After the SDK is [initialized](../../category/configuration) you can instantiate, load and show rewarded ads.
 
 ```java
 
@@ -90,7 +90,7 @@ import com.adgrowth.adserver.exceptions.AdRequestException
 
 #### instantiate RewardedAd
 
-After the SDK is [initialized](/docs/category/configuration) you can instantiate, load and show rewarded ads.
+After the SDK is [initialized](../../category/configuration) you can instantiate, load and show rewarded ads.
 
 ```kotlin
 class MainActivity : AppCompatActivity(), AdServer.Listener {
@@ -135,4 +135,4 @@ class MainActivity : AppCompatActivity(), AdServer.Listener {
 
 ### Next steps
 
-Check [other ad formats](/docs/usage) to implement in your app
+Check [other ad formats](../../usage) to implement in your app

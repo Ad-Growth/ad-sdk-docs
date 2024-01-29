@@ -3,7 +3,7 @@ title: SDKInitException
 sidebar_position: 1
 ---
 
-[AdServer](/docs/api/android/ad_server/) initialization error class.
+[AdServer](../ad_server) initialization error class.
 
 ## Attributes
 

@@ -13,11 +13,11 @@ Initialize the SDK
 
 **Param:**
 
-| Param      | Type                                                      | Description                                                                  |
-| ---------- | --------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| context    | Context                                                   | Context of application                                                       |
-| client_key | String                                                    | App client_key registered on [AdServer panel](https://adserver.adgrowth.com) |
-| callback   | [AdServer.Listener](/docs/api/android/ad_server/listener) | AdServer initialize event listener interface                                 |
+| Param      | Type                                       | Description                                                                  |
+| ---------- | ------------------------------------------ | ---------------------------------------------------------------------------- |
+| context    | Context                                    | Context of application                                                       |
+| client_key | String                                     | App client_key registered on [AdServer panel](https://adserver.adgrowth.com) |
+| callback   | [AdServer.Listener](../ad_server/listener) | AdServer initialize event listener interface                                 |
 
 **Return:** void.
 
@@ -27,12 +27,12 @@ Initialize the SDK with the client profile provided.
 
 **Param:**
 
-| Param      | Type                                                      | Description                                                                  |
-| ---------- | --------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| context    | Context                                                   | Context of application                                                       |
-| client_key | String                                                    | App client_key registered on [AdServer panel](https://adserver.adgrowth.com) |
-| profile    | [ClientProfile](/docs/api/android/client_profile)         | Client profile class for refine the ad experience                            |
-| callback   | [AdServer.Listener](/docs/api/android/ad_server/listener) | AdServer initialize event listener interface                                 |
+| Param      | Type                                       | Description                                                                  |
+| ---------- | ------------------------------------------ | ---------------------------------------------------------------------------- |
+| context    | Context                                    | Context of application                                                       |
+| client_key | String                                     | App client_key registered on [AdServer panel](https://adserver.adgrowth.com) |
+| profile    | [ClientProfile](../client_profile)         | Client profile class for refine the ad experience                            |
+| callback   | [AdServer.Listener](../ad_server/listener) | AdServer initialize event listener interface                                 |
 
 **Return:** void.
 
@@ -59,7 +59,7 @@ Return the initialized client_key
 Return the current ClientProfile object,
 you can use this for refine user's ad experience
 
-**Return:** [ClientProfile](/docs/api/android/client_profile).
+**Return:** [ClientProfile](../client_profile).
 
 ### `getAdId()`
 

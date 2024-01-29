@@ -21,4 +21,4 @@ WIP
 
 ### Next steps
 
-Now you can [configure](/docs/getting_started/configuration/ios) the SDK to start using
+Now you can [configure](../configuration/ios) the SDK to start using

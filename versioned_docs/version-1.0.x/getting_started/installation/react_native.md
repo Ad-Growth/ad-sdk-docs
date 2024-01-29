@@ -21,4 +21,4 @@ How to add this library to your React Native project
 
 ### Next steps
 
-Now you can [configure](/docs/getting_started/configuration/react_native) the SDK to start using
+Now you can [configure](../configuration/react_native) the SDK to start using

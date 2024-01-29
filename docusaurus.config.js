@@ -42,11 +42,15 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/ad-growth/ad-sdk-docs/tree/main/",
-          lastVersion: "1.0.x",
+          lastVersion: "1.1.x",
           versions: {
-            "1.0.x": {
-              label: "1.0.x (Latest)",
+            "1.1.x": {
+              label: "1.1.x (Latest)",
               path: "",
+            },
+            "1.0.x": {
+              label: "1.0.x",
+              path: "1.0.x",
             },
             current: {
               label: "Next",

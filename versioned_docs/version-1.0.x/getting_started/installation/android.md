@@ -53,4 +53,4 @@ dependencies {
 
 ### Next steps
 
-Now you can [configure](/docs/getting_started/configuration/android) the SDK to start using
+Now you can [configure](../configuration/android) the SDK to start using

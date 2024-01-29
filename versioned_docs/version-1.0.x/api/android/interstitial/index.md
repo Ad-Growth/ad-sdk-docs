@@ -23,9 +23,9 @@ Set a listener for InterstitialAd events
 
 **Param:**
 
-| Param    | Type                                                               | Description                           |
-| -------- | ------------------------------------------------------------------ | ------------------------------------- |
-| listener | [InterstitialAd.Listener](/docs/api/android/interstitial/listener) | Interstitial event listener interface |
+| Param    | Type                                                | Description                           |
+| -------- | --------------------------------------------------- | ------------------------------------- |
+| listener | [InterstitialAd.Listener](../interstitial/listener) | Interstitial event listener interface |
 
 **Return:** void.
 

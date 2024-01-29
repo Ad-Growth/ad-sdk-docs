@@ -13,9 +13,9 @@ Set the client address object
 
 **Param:**
 
-| Param         | Type                                                             | Description        |
-| ------------- | ---------------------------------------------------------------- | ------------------ |
-| clientAddress | [ClientAddress](/docs/api/android/client_profile/client_address) | User clientAddress |
+| Param         | Type                                              | Description        |
+| ------------- | ------------------------------------------------- | ------------------ |
+| clientAddress | [ClientAddress](../client_profile/client_address) | User clientAddress |
 
 **Return:**
 void.
@@ -104,9 +104,9 @@ Set user gender
 
 **Param:**
 
-| Param  | Type                                                            | Description |
-| ------ | --------------------------------------------------------------- | ----------- |
-| gender | [ClientProfile.Gender](/docs/api/android/client_profile/gender) | User gender |
+| Param  | Type                                             | Description |
+| ------ | ------------------------------------------------ | ----------- |
+| gender | [ClientProfile.Gender](../client_profile/gender) | User gender |
 
 **Return:**
 void.
@@ -123,7 +123,7 @@ String[].
 Return ClientAddress. object
 
 **Return:**
-[ClientAddress](/docs/api/android/client_profile/client_address).
+[ClientAddress](../client_profile/client_address).
 
 ### `getAge()`
 
@@ -151,4 +151,4 @@ int.
 Return user gender.
 
 **Return:**
-[ClientProfile.Gender](/docs/api/android/client_profile/gender).
+[ClientProfile.Gender](../client_profile/gender).

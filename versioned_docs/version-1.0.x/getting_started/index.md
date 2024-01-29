@@ -20,22 +20,22 @@ Before starting the implementation you need to have a registered account on our 
 
 See docs per platform:
 
-- [Android](/docs/getting_started/installation/android)
-- [iOS (WIP)](/docs/getting_started/installation/ios)
-- [React Native (TODO)](/docs/getting_started/installation/react_native)
+- [Android](../getting_started/installation/android)
+- [iOS (WIP)](../getting_started/installation/ios)
+- [React Native (TODO)](../getting_started/installation/react_native)
 
 ### 2. Once installed you can configure the SDK
 
 See docs per platform:
 
-- [Android](/docs/getting_started/configuration/android)
-- [iOS (WIP)](/docs/getting_started/configuration/ios)
-- [React Native (TODO)](/docs/getting_started/configuration/react_native)
+- [Android](../getting_started/configuration/android)
+- [iOS (WIP)](../getting_started/configuration/ios)
+- [React Native (TODO)](../getting_started/configuration/react_native)
 
 ### 3. Usage
 
-You can check the [Usage](/docs/usage) section for use of
+You can check the [Usage](../usage) section for use of
 
-- [Interstitial Ad](/docs/category/interstitial)
-- [Rewarded Ad](/docs/category/rewarded)
-- [Banner Ad](/docs/category/banner)
+- [Interstitial Ad](../category/interstitial)
+- [Rewarded Ad](../category/rewarded)
+- [Banner Ad](../category/banner)

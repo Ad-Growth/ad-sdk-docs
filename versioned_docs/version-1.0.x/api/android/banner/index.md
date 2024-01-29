@@ -11,12 +11,12 @@ Class for displaying on screen banner ad.
 
 **Params:**
 
-| Param       | Type                                                    | Description                                                                     |
-| ----------- | ------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| context     | Context                                                 | Parent view                                                                     |
-| unitId      | String                                                  | Registered banner ad unit_id on [AdServer panel](https://adserver.adgrowth.com) |
-| size        | [AdSizeType](/docs/api/android/enums/ad_size_type)      | Banners' dimensions size                                                        |
-| orientation | [AdOrientation](/docs/api/android/enums/ad_orientation) | Banners' orientation                                                            |
+| Param       | Type                                     | Description                                                                     |
+| ----------- | ---------------------------------------- | ------------------------------------------------------------------------------- |
+| context     | Context                                  | Parent view                                                                     |
+| unitId      | String                                   | Registered banner ad unit_id on [AdServer panel](https://adserver.adgrowth.com) |
+| size        | [AdSizeType](../enums/ad_size_type)      | Banners' dimensions size                                                        |
+| orientation | [AdOrientation](../enums/ad_orientation) | Banners' orientation                                                            |
 
 ## Methods
 
@@ -26,9 +26,9 @@ Set a listener for AdView events
 
 **Param:**
 
-| Param    | Type                                                   | Description                       |
-| -------- | ------------------------------------------------------ | --------------------------------- |
-| listener | [AdView.Listener](/docs/api/android/rewarded/listener) | Rewarded event listener interface |
+| Param    | Type                                    | Description                       |
+| -------- | --------------------------------------- | --------------------------------- |
+| listener | [AdView.Listener](../rewarded/listener) | Rewarded event listener interface |
 
 **Return:** void.
 
@@ -48,13 +48,13 @@ Force refresh banner
 
 Get banners' current unitId.
 
-**Return:** [AdSizeType](/docs/api/android/enums/ad_size_type).
+**Return:** [AdSizeType](../enums/ad_size_type).
 
 ### `getOrientation()`
 
 Get banners' current orientation.
 
-**Return:** [AdOrientation](/docs/api/android/enums/ad_orientation).
+**Return:** [AdOrientation](../enums/ad_orientation).
 
 ### `isLoaded()`
 

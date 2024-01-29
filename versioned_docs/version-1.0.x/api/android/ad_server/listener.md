@@ -14,6 +14,6 @@ Called when the ad fails to initialize SDK
 
 **Param:**
 
-| Param     | Type                                                                | Description                         |
-| --------- | ------------------------------------------------------------------- | ----------------------------------- |
-| exception | [SDKInitException](/docs/api/android/exceptions/sdk_init_exception) | SDK initialization exception object |
+| Param     | Type                                                 | Description                         |
+| --------- | ---------------------------------------------------- | ----------------------------------- |
+| exception | [SDKInitException](../exceptions/sdk_init_exception) | SDK initialization exception object |

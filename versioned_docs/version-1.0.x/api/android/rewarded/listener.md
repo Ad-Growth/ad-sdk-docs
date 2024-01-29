@@ -12,9 +12,9 @@ A banner ad events interface.
 Called when the ad is ready to show.
 **Param:**
 
-| Param | Type                                     | Description                   |
-| ----- | ---------------------------------------- | ----------------------------- |
-| ad    | [RewardedAd](/docs/api/android/rewarded) | Request load exception object |
+| Param | Type                      | Description                   |
+| ----- | ------------------------- | ----------------------------- |
+| ad    | [RewardedAd](../rewarded) | Request load exception object |
 
 ### `onEarnedReward(reward)`
 
@@ -22,9 +22,9 @@ Called when the ad has played to the end and the reward has been released to the
 
 **Param:**
 
-| Param  | Type                                                 | Description        |
-| ------ | ---------------------------------------------------- | ------------------ |
-| reward | [RewardItem](/docs/api/android/rewarded/reward_item) | Reward item object |
+| Param  | Type                                  | Description        |
+| ------ | ------------------------------------- | ------------------ |
+| reward | [RewardItem](../rewarded/reward_item) | Reward item object |
 
 ### `onDismissed()`
 
@@ -44,9 +44,9 @@ Called when the ad fails to load
 
 **Param:**
 
-| Param     | Type                                                                    | Description                   |
-| --------- | ----------------------------------------------------------------------- | ----------------------------- |
-| exception | [AdRequestException](/docs/api/android/exceptions/ad_request_exception) | Request Load exception object |
+| Param     | Type                                                     | Description                   |
+| --------- | -------------------------------------------------------- | ----------------------------- |
+| exception | [AdRequestException](../exceptions/ad_request_exception) | Request Load exception object |
 
 ### `onFailedToShow(code)`
 

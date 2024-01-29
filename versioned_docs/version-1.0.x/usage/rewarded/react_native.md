@@ -12,7 +12,7 @@ You need to have `unit_id` for `REWARDED` type, register on your app screen at [
 
 ### IMPORTANT
 
-This type of ad works similarly to the [InterstitialAd](/docs/category/interstitial/), however there are additional settings when registering the display block.
+This type of ad works similarly to the [InterstitialAd](../../category/interstitial/), however there are additional settings when registering the display block.
 You can set a reward `item` name and `value`.
 
 <Tabs>
@@ -26,4 +26,4 @@ You can set a reward `item` name and `value`.
 
 ### Next steps
 
-Check [other ad formats](/docs/usage) to implement in your app
+Check [other ad formats](../../usage) to implement in your app
