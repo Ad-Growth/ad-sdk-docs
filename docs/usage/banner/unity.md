@@ -59,7 +59,8 @@ public class MyAdViewObject : MonoBehaviour
 
 ```
 
-### You can listen ad events adding lambda functions for each event
+### Events
+You can listen ad events adding lambda functions for each event
 
 ```csharp
 void ConfigureEvents(InterstitialAd ad) {
