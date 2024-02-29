@@ -1,6 +1,6 @@
 ---
+sidebar_position: 1
 title: Android
-sidebar_position: 2
 ---
 
 import Tabs from "@theme/Tabs";

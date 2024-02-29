@@ -7,7 +7,7 @@ static Class for handle SDK initialization and user profile settings.
 
 ## Static Methods
 
-### `initialize(context, client_key, callback)`
+### `initialize(context, callback)`
 
 Initialize the SDK
 
@@ -16,12 +16,11 @@ Initialize the SDK
 | Param      | Type                                       | Description                                                                  |
 | ---------- | ------------------------------------------ | ---------------------------------------------------------------------------- |
 | context    | Context                                    | Context of application                                                       |
-| client_key | String                                     | App client_key registered on [AdServer panel](https://adserver.adgrowth.com) |
 | callback   | [AdServer.Listener](../ad_server/listener) | AdServer initialize event listener interface                                 |
 
 **Return:** void.
 
-### `initialize(context, client_key, profile, callback)`
+### `initialize(context, profile, callback)`
 
 Initialize the SDK with the client profile provided.
 
@@ -30,7 +29,6 @@ Initialize the SDK with the client profile provided.
 | Param      | Type                                       | Description                                                                  |
 | ---------- | ------------------------------------------ | ---------------------------------------------------------------------------- |
 | context    | Context                                    | Context of application                                                       |
-| client_key | String                                     | App client_key registered on [AdServer panel](https://adserver.adgrowth.com) |
 | profile    | [ClientProfile](../client_profile)         | Client profile class for refine the ad experience                            |
 | callback   | [AdServer.Listener](../ad_server/listener) | AdServer initialize event listener interface                                 |
 
@@ -48,13 +46,7 @@ Kill the SDK initialization
 
 **Return:** void.
 
-### `getClientKey()`
-
-Return the initialized client_key
-
-**Return:** String.
-
-### `getUserProfile()`
+### `getClientProfile()`
 
 Return the current ClientProfile object,
 you can use this for refine user's ad experience

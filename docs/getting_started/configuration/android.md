@@ -98,7 +98,7 @@ You can pass an user profile on AdServer `initialize` method
   });
 
   // or get the current profile and modify it if the SDK is already initialized
-  mProfile = AdServer.getUserProfile();
+  mProfile = AdServer.getClientProfile();
 ```
 
 ### Localization
@@ -183,7 +183,7 @@ You can pass an user profile on AdServer `initialize` method
   });
 
   // or get the current profile and modify it if the SDK is already initialized
-  mProfile = AdServer.getUserProfile();
+  mProfile = AdServer.getClientProfile();
 ```
 
 ### Localization
