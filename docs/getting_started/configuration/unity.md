@@ -15,7 +15,7 @@ For this you need to have the app keys at hand, you can get your keys by registe
 In the AdServer panel you will have 2 types of keys, Development and Production. We strongly recommend that you **only use production keys when compiling your app for distribution**.
 ​
 
-### You must add these two keys on AdServer Settings panel
+You must add these two keys on AdServer Settings panel
 
 - On your editor go to `Window > AdServer Settings`
 - Put your production keys here, or keep it while development
@@ -23,7 +23,9 @@ In the AdServer panel you will have 2 types of keys, Development and Production.
 
 - Click `Save` to save current configs.
 
-### This plugin on Android only works for **24+ API Level**, so you have to do some more settings​
+### IMPORTANT
+
+This plugin on Android only works for **24+ API Level**, so you have to do some more settings​
 
 - Open File > Build Settings
 - Click on Android and click Switch Platform
