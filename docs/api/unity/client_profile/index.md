@@ -3,13 +3,13 @@ title: ClientProfile
 sidebar_position: 2
 ---
 
-Class for provide user info to refine ad experience.
+Class for providing user info to refine ad experience.
 
 ## Methods
 
 ### `AddInterests(interest)`
 
-Add interest
+Add user interest to refine ad targeting.
 
 **Param:**
 
@@ -21,7 +21,7 @@ Add interest
 
 ### `RemoveInterests(interest)`
 
-Remove an interest
+Remove a user interest from ad targeting.
 
 **Param:**
 
@@ -33,30 +33,30 @@ Remove an interest
 
 ### `clientAddress` _{ get; }_
 
-ClientAddress. object
+ClientAddress object
 
 **Return:** [ClientAddress](../client_profile/client_address).
 
 ### `age` _{ get; set; }_
 
-User age.
+User's current age.
 
 **Return:** int.
 
 ### `minAge` _{ get; set; }_
 
-Min age of age range.
+Minimum age of the target age range.
 
 **Return:** int.
 
 ### `maxAge` _{ get; set; }_
 
-Max age of age range.
+Maximum age of the target age range.
 
 **Return:** int.
 
 ### `gender` _{ get; set; }_
 
-User gender.
+User's gender.
 
 **Return:** [ClientProfile.Gender](../client_profile/gender).

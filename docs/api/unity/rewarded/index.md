@@ -5,7 +5,7 @@ sidebar_position: 4
 
 Class for displaying rewarded ad.
 
-## Construtor
+## Constructor
 
 ### `RewardedAd(unitId)`
 
@@ -19,13 +19,13 @@ Class for displaying rewarded ad.
 
 ### `Load(OnLoad)`
 
-load an ad.
+Load the rewarded ad.
 
 **Param:**
 
 | Param  | Type                            | Description                      |
 | ------ | ------------------------------- | -------------------------------- |
-| OnLoad | [System.action<[RewardedAd](.)>] | Called when ad is ready for show |
+| OnLoad | [System.action<[RewardedAd](.)>] | Called when ad is ready to show |
 
 **Return:** void.
 

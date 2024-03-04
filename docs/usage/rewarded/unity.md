@@ -5,16 +5,16 @@ sidebar_position: 4
 
 ### How to implement on Unity Engine
 
-You need to have `unit_id` for `REWARDED` type, register on your app screen at [AdServer panel](https://adserver.adgrowth.com/mfe-apps/apps).
+To integrate with the Unity Engine, you'll need a `unit_id` for the `REWARDED` type, which you can register on your app screen at the [AdServer panel](https://adserver.adgrowth.com/mfe-apps/apps).
 
 ### IMPORTANT
 
 This type of ad works similarly to the [InterstitialAd](../../category/interstitial/), however there are additional settings when registering the display block.
 You can set a reward `item` name and `value`.
 
-#### instantiate RewardedAd
+#### Instantiate RewardedAd
 
-After the SDK is initialized you can instantiate, load and show rewarded ads.
+Once the SDK is initialized, you're ready to instantiate, load, and show rewarded ads in your application.
 
 ```csharp
 

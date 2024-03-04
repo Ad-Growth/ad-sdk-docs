@@ -5,7 +5,7 @@ sidebar_position: 4
 
 ### How to implement on Unity Engine
 
-You need to have unit_id for BANNER type, register on your app screen at [AdServer panel](https://adserver.adgrowth.com/mfe-apps/apps)
+To integrate with the Unity Engine, you'll need a `unit_id` for the `BANNER` type, which you can register on your app screen at the [AdServer panel](https://adserver.adgrowth.com/mfe-apps/apps).
 
 ### IMPORTANT
 

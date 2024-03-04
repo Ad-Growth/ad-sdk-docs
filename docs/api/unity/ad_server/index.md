@@ -3,13 +3,13 @@ title: AdServer
 sidebar_position: 1
 ---
 
-static Class for handle SDK initialization and user profile settings.
+static Class for handling SDK Initialization and user profile settings.
 
 ## Static Methods
 
 ### `Initialize(OnInit)`
 
-Initialize the SDK
+Initializes the SDK
 
 **Param:**
 
@@ -21,13 +21,13 @@ Initialize the SDK
 
 ### `isInitialized` _{ get; }_
 
-Boolean that indicates if the is initialized or not.
+Boolean indicating whether the SDK is initialized or not.
 
 **type:** boolean.
 
 ### `clientProfile` _{ get; }_
 
 Current ClientProfile object,
-you can use this for refine user's ad experience
+you can use this to refine the user's ad experience.
 
 **type:** [ClientProfile](../client_profile).

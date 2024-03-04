@@ -5,11 +5,11 @@ title: Unity
 
 ### How to implement on Unity Engine
 
-You need to have `unit_id` for `INTERSTITIAL` type, register on your app screen at [AdServer panel](https://adserver.adgrowth.com/mfe-apps/apps)
+To integrate with the Unity Engine, you'll need a `unit_id` for the `INTERSTITIAL` type, which you can register on your app screen at the [AdServer panel](https://adserver.adgrowth.com/mfe-apps/apps).
 
-#### instantiate InterstitialAd
+#### Instantiate InterstitialAd
 
-After the SDK is initialized you can instantiate, load and show interstitial ads.
+Once the SDK is initialized, you're ready to instantiate, load, and show interstitial ads in your application.
 
 ```csharp
 

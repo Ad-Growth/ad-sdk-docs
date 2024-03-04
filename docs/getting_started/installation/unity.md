@@ -17,4 +17,4 @@ How to add this library to your unity project
 
 ### Next steps
 
-Now you can [configure](../configuration/unity) the SDK to start using
+You're now ready to [configure](../configuration/unity) the SDK and begin using it in your project.

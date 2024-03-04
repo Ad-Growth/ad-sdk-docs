@@ -3,7 +3,7 @@ title: AdSize
 sidebar_position: 1
 ---
 
-Enum for define the Banner type ad size.
+Enum for defining the Banner type ad size.
 
 ## Attributes
 

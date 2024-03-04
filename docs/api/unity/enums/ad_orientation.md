@@ -3,7 +3,7 @@ title: AdOrientation
 sidebar_position: 2
 ---
 
-Enum for define user profile gender
+Enum for defining user profile gender.
 
 ## Attributes
 

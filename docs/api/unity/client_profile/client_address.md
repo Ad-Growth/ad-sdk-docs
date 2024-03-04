@@ -3,7 +3,7 @@ title: ClientAddress
 sidebar_position: 1
 ---
 
-Class for define the user address for a better located ad experience
+Class for defining the user's address to enhance location-based ad experiences.
 
 ## Methods
 

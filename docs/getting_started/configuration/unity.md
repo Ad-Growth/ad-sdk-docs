@@ -12,7 +12,7 @@ Before using any resource, it is necessary to initialize the SDK properly.
 
 For this you need to have the app keys at hand, you can get your keys by registering the app in the [AdServer panel](https://adserver.adgrowth.com/mfe-apps/apps).
 
-In the AdServer panel you will have 2 types of keys, Development and Production. We strongly recommend that you **only use production keys when compiling your app for distribution**.
+In the AdServer panel you will have two types of keys, Development and Production. We strongly recommend that you **only use production keys when compiling your app for distribution**.
 ​
 
 You must add these two keys on AdServer Settings panel

@@ -5,7 +5,7 @@ sidebar_position: 5
 
 Class for displaying on screen banner ad.
 
-## Construtor
+## Constructor
 
 ### `AdView(context, unitId, size, orientation, position)`
 
@@ -15,11 +15,11 @@ Class for displaying on screen banner ad.
 | ----------- | ---------------------------------------- | ------------------------------------------------------------------------------- |
 | context     | Context                                  | Parent view                                                                     |
 | unitId      | String                                   | Registered banner ad unit_id on [AdServer panel](https://adserver.adgrowth.com) |
-| size        | [AdSize](../enums/ad_size)               | Banners' dimensions size                                                        |
-| orientation | [AdOrientation](../enums/ad_orientation) | Banners' orientation                                                            |
-| position    | [AdPosition](../enums/ad_position)       | Banners' position on screen                                                     |
+| size        | [AdSize](../enums/ad_size)               | Banner's dimensions size                                                        |
+| orientation | [AdOrientation](../enums/ad_orientation) | Banner's orientation                                                            |
+| position    | [AdPosition](../enums/ad_position)       | Banner's position on screen                                                     |
 
-## Construtor
+## Constructor
 
 ### `AdView(context, unitId, size, orientation, x, y)`
 
@@ -29,14 +29,14 @@ Class for displaying on screen banner ad.
 | ----------- | ---------------------------------------- | ------------------------------------------------------------------------------- |
 | context     | Context                                  | Parent view                                                                     |
 | unitId      | String                                   | Registered banner ad unit_id on [AdServer panel](https://adserver.adgrowth.com) |
-| size        | [AdSize](../enums/ad_size)               | Banners' dimensions size                                                        |
-| orientation | [AdOrientation](../enums/ad_orientation) | Banners' orientation                                                            |
-| x           | int                                      | Banners' horizontal position on screen                                          |
-| y           | int                                      | Banners' vertical position on screen                                            |
+| size        | [AdSize](../enums/ad_size)               | Banner's dimensions size                                                        |
+| orientation | [AdOrientation](../enums/ad_orientation) | Banner's orientation                                                            |
+| x           | int                                      | Banner's horizontal position on screen                                          |
+| y           | int                                      | Banner's vertical position on screen                                            |
 
 ### `Load()`
 
-Put Banner on screen and start loading
+Display the banner on the screen and start loading.
 
 **Return:** void.
 
@@ -48,13 +48,13 @@ Force refresh banner
 
 ### `IsLoaded()`
 
-Return a boolean that indicates if the ad is loaded or not.
+Return a boolean indicating whether the ad is loaded.
 
 **Return:** boolean.
 
 ### `IsFailed()`
 
-Return a boolean that indicates if the failed to load an ad.
+Return a boolean indicating whether the ad failed to load.
 
 **Return:** boolean.
 

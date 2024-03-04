@@ -3,7 +3,7 @@ title: AdSize
 sidebar_position: 1
 ---
 
-Enum for define the Banner position on screen.
+Enum for defining the Banner position on screen.
 
 ## Attributes
 

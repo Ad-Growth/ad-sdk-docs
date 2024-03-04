@@ -5,7 +5,7 @@ sidebar_position: 3
 
 Class for displaying interstitial ad.
 
-## Construtor
+## Constructor
 
 ### `InterstitialAd(unitId)`
 
@@ -19,13 +19,13 @@ Class for displaying interstitial ad.
 
 ### `Load(OnLoad)`
 
-load an ad.
+Load the interstitial ad.
 
 **Param:**
 
 | Param  | Type                                          | Description                      |
 | ------ | --------------------------------------------- | -------------------------------- |
-| OnLoad | [System.action<[InterstitialAd](.)>] | Called when ad is ready for show |
+| OnLoad | [System.action<[InterstitialAd](.)>] | Called when ad is ready to show |
 
 **Return:** void.
 
