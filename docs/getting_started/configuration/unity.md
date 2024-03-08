@@ -19,7 +19,7 @@ You must add these two keys on AdServer Settings panel
 
 - On your editor go to `Window > AdServer Settings`
 - Put your production keys here, or keep it while development
-  ![3](https://github.com/Ad-Growth/ad-sdk-unity/assets/78423625/26ebc98f-2233-4e08-8e66-da2c116937c5)
+  ![3](https://github.com/Ad-Growth/ad-sdk-unity/assets/78423625/80c5eb31-e368-4dc0-82e2-21e76122e7f5)
 
 - Click `Save` to save current configs.
 
@@ -30,9 +30,9 @@ This plugin on Android only works for **24+ API Level**, so you have to do some 
 - Open File > Build Settings
 - Click on Android and click Switch Platform
 - Click on Player Settings<br/>
-  ![1](https://github.com/Ad-Growth/ad-sdk-unity/assets/78423625/9b82d7cb-72a8-4e1b-8bcb-f6bf75597547)
+  ![1](https://github.com/Ad-Growth/ad-sdk-unity/assets/78423625/9ffc6e3a-2772-4a2d-b823-b859540993a3)
 - Roll to `Other Settings` and set `Minimum API Level to 24` or more recent.
-  ![2](https://github.com/Ad-Growth/ad-sdk-unity/assets/78423625/de47d0e6-09f3-4f6f-9956-9bbe58a2c829)
+  ![2](https://github.com/Ad-Growth/ad-sdk-unity/assets/78423625/10ec5ca4-d541-4a8c-b1af-e82926df04c0)
 
 ### Initializing
 
