@@ -88,9 +88,9 @@ void ConfigureEvents(InterstitialAd ad) {
     // ad impression registered
   }
 }
-
+```
 
 ### Next steps
 
 Check [other ad formats](../../usage) to implement in your app
-```
+
