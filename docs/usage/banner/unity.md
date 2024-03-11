@@ -43,16 +43,17 @@ public class MyAdViewObject : MonoBehaviour
         AdPosition.TOP_CENTER
         );
 
-      AdView ad = new AdView(
+      // Or pass x and y position on screen
+      AdView customPositionAd = new AdView(
         unit_id,
         AdSize.BANNER,
         AdOrientation.LANDSCAPE,
-        // Or pass x and y position
         150,  // x
         100   // y
         );
 
       ad.Load(); // the banner will be added to screen
+      customPositionAd.Load(); // the banner will be added to screen at the provided x and y position
 
   }
 }
