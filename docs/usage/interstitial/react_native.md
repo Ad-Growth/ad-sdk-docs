@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 title: React Native
 ---
 
@@ -21,4 +21,4 @@ You need to have `unit_id` for `INTERSTITIAL` type, register on your app screen 
 
 ### Next steps
 
-Check [other ad formats](../../usage) to implement in your app
+Check [other ad formats](../../usage/) to implement in your app

@@ -1,6 +1,6 @@
 ---
 title: Unity
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 ### How to implement on Unity Engine
@@ -17,9 +17,9 @@ Use the AdView component to render banner advertisements in your game view only 
 
 you must use the some enums to configure your banner on screen:
 
-- [AdSize](../../api/unity/enums/ad_size.md) enum to define the size of the banner;
-- [AdOrientation](../../api/unity/enums/ad_orientation.md) to define the orientation of your banner and
-- [AdPosition](../../api/unity/enums/ad_position.md) to define the location where the banner will be rendered.
+- [AdSize](../../api/csharp/enums/ad_size) enum to define the size of the banner;
+- [AdOrientation](../../api/csharp/enums/ad_orientation) to define the orientation of your banner and
+- [AdPosition](../../api/csharp/enums/ad_position) to define the location where the banner will be rendered.
 - You would pass a x or y on AdView overload for custom position on screen.
 
 ```csharp
@@ -64,9 +64,12 @@ public class MyAdViewObject : MonoBehaviour
 You can listen ad events adding lambda functions for each event
 
 ```csharp
-void ConfigureEvents(InterstitialAd ad) {
-  InterstitialAd ad = new InterstitialAd(unit_id);
+void ConfigureEvents(IAdView ad) {
 
+  ad.OnLoad += (IAdView ad) =>
+  {
+    // do something
+  };
   ad.OnFailedToLoad += (AdRequestException exception) =>
   {
     // handle it
@@ -92,5 +95,5 @@ void ConfigureEvents(InterstitialAd ad) {
 
 ### Next steps
 
-Check [other ad formats](../../usage) to implement in your app
+Check [other ad formats](../../usage/) to implement in your app
 

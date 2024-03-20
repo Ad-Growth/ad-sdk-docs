@@ -154,7 +154,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} AdGrowth Ad SDK.`,
       },
       prism: {
-        additionalLanguages: ["java", "kotlin","csharp", "swift", "gradle"],
+        additionalLanguages: ["java", "kotlin","csharp","gdscript", "swift", "gradle"],
 
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,

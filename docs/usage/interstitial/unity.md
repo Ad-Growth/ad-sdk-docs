@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 1
 title: Unity
 ---
 
@@ -27,9 +27,9 @@ public class MyInterstitialAdObject : MonoBehaviour
       // after initialized SDK
       ad = new InterstitialAd(unit_id);
 
-      ad.Load((InterstitialAd ad)=>{
+      ad.Load((IInterstitialAd interstitialAd)=>{
         // your ad has been loaded
-      })
+      });
 
   }
 }
@@ -46,7 +46,6 @@ You can listen ad events adding lambda functions for each event
 
 ```csharp
 void ConfigureEvents(InterstitialAd ad) {
-  InterstitialAd ad = new InterstitialAd(unit_id);
 
   ad.OnFailedToLoad += (AdRequestException exception) =>
   {
@@ -67,10 +66,10 @@ void ConfigureEvents(InterstitialAd ad) {
   ad.OnImpression += () =>
   {
     // ad impression registered
-  }
+  };
 }
 ```
 
 ### Next steps
 
-Check [other ad formats](../../usage) to implement in your app
+Check [other ad formats](../../usage/) to implement in your app

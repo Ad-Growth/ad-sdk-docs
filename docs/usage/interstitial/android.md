@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 title: Android
 ---
 
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
   </TabItem>
   <TabItem value="kotlin" label="Kotlin">
-    
+
 #### imports
 
 ```kotlin
@@ -141,4 +141,4 @@ class MainActivity : AppCompatActivity(), AdServer.Listener {
 
 ### Next steps
 
-Check [other ad formats](../../usage) to implement in your app
+Check [other ad formats](../../usage/) to implement in your app

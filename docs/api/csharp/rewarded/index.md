@@ -23,8 +23,8 @@ Load the rewarded ad.
 
 **Param:**
 
-| Param  | Type                            | Description                      |
-| ------ | ------------------------------- | -------------------------------- |
+| Param  | Type                             | Description                     |
+| ------ | -------------------------------- | ------------------------------- |
 | OnLoad | [System.action<[RewardedAd](.)>] | Called when ad is ready to show |
 
 **Return:** void.
@@ -35,9 +35,9 @@ Show the loaded ad.
 
 **Param:**
 
-| Param          | Type                                            | Description                             |
-| -------------- | ----------------------------------------------- | --------------------------------------- |
-| OnEarnedReward | [System.Action<[RewardItem](./reward_item.md)>] | Activity where the ad will be displayed |
+| Param          | Type                                         | Description                             |
+| -------------- | -------------------------------------------- | --------------------------------------- |
+| OnEarnedReward | [System.Action<[RewardItem](./reward_item)>] | Activity where the ad will be displayed |
 
 **Return:** void.
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 title: React Native
 ---
 
@@ -29,4 +29,4 @@ Use the AdView component to render banner advertisements in your xml view only a
 
 ### Next steps
 
-Check [other ad formats](../../usage) to implement in your app
+Check [other ad formats](../../usage/) to implement in your app

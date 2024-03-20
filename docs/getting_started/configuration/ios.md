@@ -1,6 +1,6 @@
 ---
 title: iOS
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 import Tabs from "@theme/Tabs";
@@ -23,4 +23,4 @@ For this you need to have the `client_key` at hand, you can get your `client_key
 
 ### Usage
 
-Once configured you can check the [usage](../../usage) for ad implementation
+Once configured you can check the [usage](../../usage/) for ad implementation

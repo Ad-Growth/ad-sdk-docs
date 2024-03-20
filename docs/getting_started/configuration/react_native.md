@@ -1,6 +1,6 @@
 ---
 title: React Native
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 import Tabs from "@theme/Tabs";
@@ -23,4 +23,4 @@ For this you need to have the `client_key` at hand, you can get your `client_key
 
 ### Usage
 
-Once configured you can check the [usage](../../usage) for ad implementation
+Once configured you can check the [usage](../../usage/) for ad implementation

@@ -64,14 +64,11 @@ public class AdServerInitializer : MonoBehaviour
 }
 ```
 
-### Client Profile
+### (Optional) Client Profile
 
 You can customize the ClientProfile on any moment of runtime
 
 ```csharp
-
-  AdServer.clientProfile.clientAddress.city = "";
-  AdServer.clientProfile.age = 16;
 
   // add user's age
   AdServer.clientProfile.age = 16;
@@ -100,7 +97,7 @@ You can customize the ClientProfile on any moment of runtime
 
 ```
 
-### Localization
+### (Optional) Localization
 
 You can add user's address or location on anytime to provide a better localized ad experience
 
@@ -118,4 +115,4 @@ You can add user's address or location on anytime to provide a better localized 
 
 ### Usage
 
-Once configured you can check the [usage](../../usage) for ad implementation
+Once configured you can check the [usage](../../usage/) for ad implementation
