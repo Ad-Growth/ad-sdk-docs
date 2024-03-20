@@ -22,6 +22,7 @@ See docs per platform:
 - [Android](../getting_started/installation/android)
 - [iOS (WIP)](../getting_started/installation/ios)
 - [Unity](../getting_started/installation/unity)
+- [Godot](../getting_started/installation/godot)
 - [React Native (TODO)](../getting_started/installation/react_native)
 
 ### 2. Once installed you can configure the SDK
@@ -31,6 +32,7 @@ See docs per platform:
 - [Android](../getting_started/configuration/android)
 - [iOS (WIP)](../getting_started/configuration/ios)
 - [Unity](../getting_started/configuration/unity)
+- [Godot](../getting_started/configuration/godot)
 - [React Native (TODO)](../getting_started/configuration/react_native)
 
 ### 3. Usage

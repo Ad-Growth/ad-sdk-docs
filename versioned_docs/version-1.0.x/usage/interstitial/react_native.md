@@ -21,4 +21,4 @@ You need to have `unit_id` for `INTERSTITIAL` type, register on your app screen 
 
 ### Next steps
 
-Check [other ad formats](../../usage) to implement in your app
+Check [other ad formats](../../usage/) to implement in your app

@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
-### Client Profile
+### (Optional) Client Profile
 
 You can pass an user profile on AdServer `initialize` method
 
@@ -101,7 +101,7 @@ You can pass an user profile on AdServer `initialize` method
   mProfile = AdServer.getUserProfile();
 ```
 
-### Localization
+### (Optional) Localization
 
 You can add user's address or location on anytime to provide a better localized ad experience
 
@@ -150,7 +150,7 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
-### Client Profile
+### (Optional) Client Profile
 
 You can pass an user profile on AdServer `initialize` method
 
@@ -186,7 +186,7 @@ You can pass an user profile on AdServer `initialize` method
   mProfile = AdServer.getUserProfile();
 ```
 
-### Localization
+### (Optional) Localization
 
 You can add user's address or location on anytime to provide a better localized ad experience
 
@@ -208,4 +208,4 @@ You can add user's address or location on anytime to provide a better localized 
 
 ### Usage
 
-Once configured you can check the [usage](../../usage) for ad implementation
+Once configured you can check the [usage](../../usage/) for ad implementation

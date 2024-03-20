@@ -135,4 +135,4 @@ class MainActivity : AppCompatActivity(), AdServer.Listener {
 
 ### Next steps
 
-Check [other ad formats](../../usage) to implement in your app
+Check [other ad formats](../../usage/) to implement in your app

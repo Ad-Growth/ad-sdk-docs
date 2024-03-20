@@ -1,6 +1,6 @@
 ---
 title: Android
-sidebar_position: 2
+sidebar_position: 0
 ---
 
 import Tabs from "@theme/Tabs";
@@ -135,4 +135,4 @@ class MainActivity : AppCompatActivity(), AdServer.Listener {
 
 ### Next steps
 
-Check [other ad formats](../../usage) to implement in your app
+Check [other ad formats](../../usage/) to implement in your app

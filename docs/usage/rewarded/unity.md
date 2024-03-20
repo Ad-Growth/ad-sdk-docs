@@ -1,6 +1,6 @@
 ---
 title: Unity
-sidebar_position: 4
+sidebar_position: 1
 ---
 
 ### How to implement on Unity Engine
@@ -36,7 +36,7 @@ public class MyRewardedAdObject : MonoBehaviour
 
         // your ad has been loaded
 
-      })
+      });
 
   }
 }
@@ -81,10 +81,10 @@ void ConfigureEvents(RewardedAd ad) {
   ad.OnImpression += () =>
   {
     // ad impression registered
-  }
+  };
 }
 ```
 
 ### Next steps
 
-Check [other ad formats](../../usage) to implement in your app
+Check [other ad formats](../../usage/) to implement in your app
