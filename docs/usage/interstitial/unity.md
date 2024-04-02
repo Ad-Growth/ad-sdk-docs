@@ -45,7 +45,6 @@ public class MyInterstitialAdObject : MonoBehaviour
 You can listen ad events adding lambda functions for each event
 
 ```csharp
-void ConfigureEvents(InterstitialAd ad) {
 
   ad.OnFailedToLoad += (AdRequestException exception) =>
   {
@@ -67,7 +66,7 @@ void ConfigureEvents(InterstitialAd ad) {
   {
     // ad impression registered
   };
-}
+
 ```
 
 ### Next steps

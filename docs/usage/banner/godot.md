@@ -16,17 +16,17 @@ When registering or updating your BANNER type ad in the [AdServer Panel](https:/
 
 ### Usage
 
-Use the AdView component to render banner advertisements in your game view only after the SDK is initialized:
+Use the AdView component to render banner advertisements in your game view:
 
 you must use the some enums to configure your banner on screen:
 
-- [AdSize](../../api/csharp/enums/ad_size) enum to define the size of the banner;
-- [AdOrientation](../../api/csharp/enums/ad_orientation) to define the orientation of your banner and
-- [AdPosition](../../api/csharp/enums/ad_position) to define the location where the banner will be rendered.
+- [AdSize](../../api/game_engines/enums/ad_size) enum to define the size of the banner;
+- [AdOrientation](../../api/game_engines/enums/ad_orientation) to define the orientation of your banner and
+- [AdPosition](../../api/game_engines/enums/ad_position) to define the location where the banner will be rendered.
 - You would pass a x or y on AdView overload for custom position on screen.
 
 <Tabs>
-  <TabItem value="csharp" label="C#" default>
+  <TabItem value="csharp" label="C#">
 
 ```csharp
 using AdGrowth;
@@ -66,8 +66,9 @@ public class MyAdViewObject : Node
 }
 
 ```
+
 </TabItem>
- <TabItem value="gdscript" label="GDScript">
+ <TabItem value="gdscript" label="GDScript" default>
 
 ```gdscript
 var AdViewWrapper = load("res://AdServer/AdViewWrapper.cs")
@@ -105,14 +106,12 @@ func _ready():
 ### Events
 
 <Tabs>
-  <TabItem value="csharp" label="C#" default>
-  
+  <TabItem value="csharp" label="C#">
+
 
 You can listen ad events adding lambda functions for each event
 
-
 ```csharp
-void ConfigureEvents(IAdView ad) {
 
   ad.OnLoad += (IAdView ad) =>
   {
@@ -139,15 +138,52 @@ void ConfigureEvents(IAdView ad) {
     // ad impression registered
   };
 
-  ad.Load();
-}
 ```
+
   </TabItem>
 
-  <TabItem value="gdscript" label="GDScript" default>
+  <TabItem value="gdscriptv4" label="GDScript v4" default>
 
 You can listen ad events connecting on available events **before call Load method**
 
+```gdscript
+
+func _ready():
+  var ad_view_wrapper = AdViewWrapper.new()
+  ad_view_wrapper.connect("OnLoad", _on_load);
+  ad_view_wrapper.connect("OnFailedLoad", _on_failed_to_load);
+  ad_view_wrapper.connect("OnDismissed", _on_dismissed);
+  ad_view_wrapper.connect("OnClicked", _on_clicked);
+  ad_view_wrapper.connect("OnFailedToShow", _on_failed_to_show);
+  ad_view_wrapper.connect("OnImpression", _on_impression);
+  ad_view_wrapper.Load(
+    # ... args
+  )
+
+func _on_load():
+  print("do something");
+
+func _on_failed_to_load(code, message):
+  print("handle it");
+
+func _on_dismissed():
+  print("on dismiss");
+
+func _on_clicked():
+  print("ad clicked");
+
+func _on_failed_to_show(code):
+  print("failed to show ad");
+
+func _on_impression():
+  print("ad impression registered");
+
+```
+
+ </TabItem>
+  <TabItem value="gdscriptv3" label="GDScript v3" default>
+
+You can listen ad events connecting on available events **before call Load method**
 
 ```gdscript
 
@@ -185,6 +221,45 @@ func _on_impression():
 
  </TabItem>
 </Tabs>
+
+## Safe Area
+
+When defining the location of the banner, you may encounter problems with system buttons or notches overlapping. For this we have a method in AdView where it adds a safety margin so that the banner is not rendered under these elements. Just call it in the instance;
+
+<Tabs>
+  <TabItem value="csharp" label="C#">
+
+```csharp
+  // Call EnableSafeArea for enable/disable
+  ad.EnableSafeArea(true)
+  
+  ad.Load();
+
+```
+
+  </TabItem>
+  <TabItem value="gdscript" label="GDScript" default>
+
+```gdscript
+
+func _ready():
+  var ad_view_wrapper = AdViewWrapper.new()
+  # Call EnableSafeArea for enable/disable
+  ad_view_wrapper.EnableSafeArea(true)
+
+  ad_view_wrapper.Load(
+    # ... args
+  )
+
+
+```
+
+ </TabItem>
+</Tabs>
+
+![safeareainsets](https://github.com/Ad-Growth/ad-sdk-docs/assets/78423625/ffa6fa76-df61-419d-b50a-6b1463fd4af8)
+
+The same will be done if the orientation is landscape.
 
 ### Next steps
 
