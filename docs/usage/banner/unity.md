@@ -13,13 +13,13 @@ When registering or updating your BANNER type ad in the [AdServer Panel](https:/
 
 ### Usage
 
-Use the AdView component to render banner advertisements in your game view only after the SDK is initialized:
+Use the AdView component to render banner advertisements in your game view:
 
 you must use the some enums to configure your banner on screen:
 
-- [AdSize](../../api/csharp/enums/ad_size) enum to define the size of the banner;
-- [AdOrientation](../../api/csharp/enums/ad_orientation) to define the orientation of your banner and
-- [AdPosition](../../api/csharp/enums/ad_position) to define the location where the banner will be rendered.
+- [AdSize](../../api/game_engines/enums/ad_size) enum to define the size of the banner;
+- [AdOrientation](../../api/game_engines/enums/ad_orientation) to define the orientation of your banner and
+- [AdPosition](../../api/game_engines/enums/ad_position) to define the location where the banner will be rendered.
 - You would pass a x or y on AdView overload for custom position on screen.
 
 ```csharp
@@ -64,7 +64,6 @@ public class MyAdViewObject : MonoBehaviour
 You can listen ad events adding lambda functions for each event
 
 ```csharp
-void ConfigureEvents(IAdView ad) {
 
   ad.OnLoad += (IAdView ad) =>
   {
@@ -89,9 +88,27 @@ void ConfigureEvents(IAdView ad) {
   ad.OnImpression += () =>
   {
     // ad impression registered
-  }
-}
+  };
+
 ```
+
+
+## Safe Area
+
+When defining the location of the banner, you may encounter problems with system buttons or notches overlapping. For this we have a method in AdView where it adds a safety margin so that the banner is not rendered under these elements. Just call it in the instance;
+
+```csharp
+  // Call EnableSafeArea for enable/disable
+  ad.EnableSafeArea(true)
+  
+  ad.Load();
+
+```
+
+
+![safeareainsets](https://github.com/Ad-Growth/ad-sdk-docs/assets/78423625/ffa6fa76-df61-419d-b50a-6b1463fd4af8)
+
+The same will be done if the orientation is landscape.
 
 ### Next steps
 

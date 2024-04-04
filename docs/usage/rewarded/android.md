@@ -38,8 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
   @Override
   public void onInit() {
-
-
+    
       // each display place on your app need to be registered on AdServer Panel.
       String unit_id = "my_rewarded_unit_id";
 

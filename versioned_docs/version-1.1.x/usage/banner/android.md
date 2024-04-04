@@ -16,7 +16,7 @@ When registering or updating your BANNER type ad in the [AdServer Panel](https:/
 
 ### Usage
 
-Use the AdView component to render banner advertisements in your xml view only after the SDK is initialized:
+Use the AdView component to render banner advertisements in your xml view:
 
 ```xml
 <com.adgrowth.adserver.views.AdView

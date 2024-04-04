@@ -62,4 +62,14 @@ Return a boolean indicating whether the ad failed to load.
 
 Remove banner from screen.
 
+### `EnableSafeArea(enable)`
+
+It adds a safety margin so that the banner is not rendered under system or hardware UI elements.
+
+**Params:**
+
+| Param  | Type    | Description                                         |
+| ------ | ------- | --------------------------------------------------- |
+| enable | boolean | true or false to enable or disable safe area insets |
+
 **Return:** void.

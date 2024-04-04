@@ -15,7 +15,7 @@ To integrate with the Godot Engine, you'll need a `unit_id` for the `INTERSTITIA
 Once the SDK is initialized, you're ready to instantiate, load, and show interstitial ads in your application.
 
 <Tabs>
-  <TabItem value="csharp" label="C#" default>
+  <TabItem value="csharp" label="C#">
 
 ```csharp
 
@@ -43,7 +43,35 @@ public class MyInterstitialAdObject : Node
 ```
 
   </TabItem>
-  <TabItem value="gdscript" label="GDScript">
+  <TabItem value="gdscriptv4" label="GDScript v4" default>
+
+```gdscript
+
+var InterstitialAdWrapper = load("res://AdServer/InterstitialAdWrapper.cs")
+
+func _ready():
+  # instantiate a new InterstitialAdWrapper class
+  var interstitial_ad_wrapper = InterstitialAdWrapper.new()
+
+	interstitial_ad_wrapper.connect("OnLoad", _on_load)
+	interstitial_ad_wrapper.connect("OnFailedToLoad", _on_failed_to_load)
+
+  # each display place on your app need to be registered on AdServer Panel.
+  var unit_id = "my_interstitial_unit_id"
+
+  # pass enums values as string
+	interstitial_ad_wrapper.Load(unit_id)
+
+func _on_load():
+  print("do something");
+
+func _on_failed_to_load(code, message):
+  print("handle it");
+
+```
+
+  </TabItem>
+  <TabItem value="gdscriptv3" label="GDScript v3">
 
 ```gdscript
 
@@ -71,19 +99,20 @@ func _on_failed_to_load(code, message):
 ```
 
   </TabItem>
+  
 </Tabs>
 
 ### Show your interstitial ad
 
 <Tabs>
-  <TabItem value="csharp" label="C#" default>
+  <TabItem value="csharp" label="C#">
 
 ```csharp
   ad.Show();
 ```
 
   </TabItem>
-  <TabItem value="gdscript" label="GDScript">
+  <TabItem value="gdscript" label="GDScript" default>
 
 ```csharp
   interstitial_ad_wrapper.Show();
@@ -96,10 +125,9 @@ func _on_failed_to_load(code, message):
 
 You can listen other ad events adding lambda functions for each event
 <Tabs>
-  <TabItem value="csharp" label="C#" default>
+  <TabItem value="csharp" label="C#">
 
 ```csharp
-void ConfigureEvents(InterstitialAd ad) {
 
   ad.OnFailedToLoad += (AdRequestException exception) =>
   {
@@ -120,12 +148,47 @@ void ConfigureEvents(InterstitialAd ad) {
   ad.OnImpression += () =>
   {
     // ad impression registered
-  }
-}
+  };
+
 ```
 
  </TabItem>
-  <TabItem value="gdscript" label="GDScript">
+  <TabItem value="gdscriptv4" label="GDScript v4" default>
+
+
+You can listen other ad events connecting on available events **before call Load method**
+
+
+```gdscript
+
+func _ready():
+  var interstitial_ad_wrapper = InterstitialAdWrapper.new()
+  
+  interstitial_ad_wrapper.connect("OnDismissed", _on_dismissed);
+  interstitial_ad_wrapper.connect("OnClicked", _on_clicked);
+  interstitial_ad_wrapper.connect("OnFailedToShow", _on_failed_to_show);
+  interstitial_ad_wrapper.connect("OnImpression", _on_impression);
+
+  interstitial_ad_wrapper.Load(
+    # ... args
+  )
+
+func _on_dismissed():
+  print("on dismiss");
+
+func _on_clicked():
+  print("ad clicked");
+
+func _on_failed_to_show(code):
+  print("failed to show ad");
+
+func _on_impression():
+  print("ad impression registered");
+
+```
+
+  </TabItem>
+  <TabItem value="gdscriptv3" label="GDScript v3">
 
 
 You can listen other ad events connecting on available events **before call Load method**

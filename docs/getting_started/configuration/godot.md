@@ -37,7 +37,7 @@ With the Android Custom Template installed according to [installation guide](../
 ### Initializing
 
 <Tabs>
-  <TabItem value="csharp" label="C#" default>
+  <TabItem value="csharp" label="C#">
 
 Now you can initialize the plug-in using AdServer class.
 Create a game object that extends `Node` and add a C# class `AdServerInitializer` to it
@@ -74,7 +74,44 @@ public partial class AdServerInitializer : Node
 ```
 
   </TabItem>
-  <TabItem value="gdscript" label="GDScript">
+  <TabItem value="gdscriptv4" label="GDScript v4" default>
+
+Now you can initialize the plug-in using AdServer class.
+Create a game object that extends `Node` into your first SceneTree and add a GDScript file `AdServerInitializer` to it
+
+Import and add a `AdServerWrapper` reference on top or your file.
+
+`AdServerInitializer.gd`
+
+```gdscript
+extends Node
+
+var AdServerWrapper = load("res://AdServer/AdServerWrapper.cs")
+```
+
+On `_ready` method you must instantiate the wrapper class and use Initialize method to initialize the plug-in.
+
+You should connect OnInit and OnFailed to listen initialization and failed events.
+
+`AdServerInitializer.gd`
+
+```gdscript
+func _ready():
+	var ad_server_wrapper = AdServerWrapper.new()
+	ad_server_wrapper.connect("OnInit", _on_init)
+	ad_server_wrapper.connect("OnFailed", _on_failed)
+	ad_server_wrapper.Initialize()
+
+func _on_init():
+	print("Plug-in initialized!")
+
+func _on_failed(code, message):
+	print("Initialization failed with error code: " + code + ", handle it")
+
+```
+
+  </TabItem>
+  <TabItem value="gdscriptv3" label="GDScript v3">
 
 Now you can initialize the plug-in using AdServer class.
 Create a game object that extends `Node` into your first SceneTree and add a GDScript file `AdServerInitializer` to it
@@ -111,6 +148,7 @@ func _on_failed(code, message):
 ```
 
   </TabItem>
+  
 </Tabs>
 
 ### (Optional) Client Profile
@@ -118,7 +156,7 @@ func _on_failed(code, message):
 You can customize the ClientProfile on any moment of runtime
 
 <Tabs>
-  <TabItem value="csharp" label="C#" default>
+  <TabItem value="csharp" label="C#">
 
 `AdServerInitializer.cs`
 
@@ -138,45 +176,41 @@ You can customize the ClientProfile on any moment of runtime
   AdServer.clientProfile.AddInterest("movies");
 
   AdServer.Initialize(() => {
-    // initialized
-
-
     // you can do it anytime
-    AdServer.clientProfile.age = 25
-    AdServer.clientProfile.AddInterest("adventure_games");
+  AdServer.clientProfile.age = 25
+  AdServer.clientProfile.AddInterest("adventure_games");
 
-    AdServer.clientProfile.RemoveInterest("movies");
+  AdServer.clientProfile.RemoveInterest("movies");
   }, (e) => { })
 
 ```
 
   </TabItem>
-  <TabItem value="gdscript" label="GDScript">
+  <TabItem value="gdscript" label="GDScript" default>
 
 `AdServerInitializer.gd`
 
 ```gdscript
   # add user's age
-  ad_server_wrapper.clientProfile.age = 16;
+  ad_server_wrapper.age = 16
 
   # or provide a range
-  ad_server_wrapper.clientProfile.minAge = 13;
-  ad_server_wrapper.clientProfile.maxAge = 65;
+  ad_server_wrapper.minAge = 13
+  ad_server_wrapper.maxAge = 65
 
   # set user gender
-  ad_server_wrapper.clientProfile.gender = "FEMALE";
+  ad_server_wrapper.gender = "FEMALE"
 
   # add or remove user interests
-  ad_server_wrapper.clientProfile.AddInterest("games");
-  ad_server_wrapper.clientProfile.AddInterest("movies");
+  ad_server_wrapper.AddInterest("games")
+  ad_server_wrapper.AddInterest("movies")
 
 func _on_init():
+  # you can do it anytime
+  ad_server_wrapper.age = 25
+  ad_server_wrapper.AddInterest("adventure_games")
 
-    # you can do it anytime
-    ad_server_wrapper.clientProfile.age = 25
-    ad_server_wrapper.clientProfile.AddInterest("adventure_games")
-
-    ad_server_wrapper.clientProfile.RemoveInterest("movies")
+  ad_server_wrapper.RemoveInterest("movies")
 
 ```
 
@@ -188,7 +222,7 @@ func _on_init():
 You can add user's address or location on anytime to provide a better localized ad experience
 
 <Tabs>
-  <TabItem value="csharp" label="C#" default>
+  <TabItem value="csharp" label="C#">
 
 `AdServerInitializer.cs`
 
@@ -205,18 +239,18 @@ You can add user's address or location on anytime to provide a better localized 
 ```
 
   </TabItem>
-  <TabItem value="gdscript" label="GDScript">
+  <TabItem value="gdscript" label="GDScript" default>
 
 ```gdscript
 
   # if your app have acess to user location
-  ad_server_wrapper.clientProfile.clientAddress.latitude = 40.68905007092866;
-  ad_server_wrapper.clientProfile.clientAddress.longitude = -74.04438969510598;
+  ad_server_wrapper.latitude = "40.68905007092866" # you must pass as string
+  ad_server_wrapper.longitude = "-74.04438969510598" # you must pass as string
 
   # or you can provide a country, state and/or city
-  ad_server_wrapper.clientProfile.clientAddress.country = "US";
-  ad_server_wrapper.clientProfile.clientAddress.state = "NW";
-  ad_server_wrapper.clientProfile.clientAddress.city = "New york";
+  ad_server_wrapper.country = "US"
+  ad_server_wrapper.state = "NW"
+  ad_server_wrapper.city = "New york"
 ```
 
   </TabItem>
