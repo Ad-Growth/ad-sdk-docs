@@ -42,11 +42,15 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/ad-growth/ad-sdk-docs/tree/main/",
-          lastVersion: "1.1.x",
+          lastVersion: "1.2.x",
           versions: {
-            "1.1.x": {
-              label: "1.1.x (Latest)",
+            "1.2.x": {
+              label: "1.2.x (Latest)",
               path: "",
+            },
+            "1.1.x": {
+              label: "1.1.x",
+              path: "1.1.x",
             },
             "1.0.x": {
               label: "1.0.x",
@@ -81,7 +85,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       customFields: {
-        currentVersion: "1.1.0", // Defina a versão atual
+        currentVersion: "1.2.x", // Defina a versão atual
       },
       image: "img/social-card.jpg",
       navbar: {
@@ -154,7 +158,14 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} AdGrowth Ad SDK.`,
       },
       prism: {
-        additionalLanguages: ["java", "kotlin","csharp","gdscript", "swift", "gradle"],
+        additionalLanguages: [
+          "java",
+          "kotlin",
+          "csharp",
+          "gdscript",
+          "swift",
+          "gradle",
+        ],
 
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
